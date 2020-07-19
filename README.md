@@ -1,12 +1,16 @@
 # MCWR
-### THIS IS NOT FINISHED
-MCWR is a minecraft server manager written in rust. It aims to have:
-- Simplicity
-- Quick creation of new Vanilla, Paper/Spigot, and other servers
-- Support for BungeeCord
-- Support for multiple worlds
+### THIS DOES NOT WORK YET, DO NOT USE IT
+MCWR is a minecraft server wrapper written in rust. It aims to be as simple and concise as possible while still being reasonably feature complete.
 
-This server manager is meant to be very minimal. This is **not** meant to eliminate manually editing server config files or plugins, it is simply to prevent you from having to type the same commands so often when creating or managing servers.
+## Features
+- [ ] Run servers in background and access console with tmux
+- [ ] Quick and easy creation of vanilla, paper/spigot, bungeecord, and modded servers
+- [ ] Quick shortcuts for common actions like editing config files and restarting the server
+- [ ] Simple backup solution
+
+## Goals
+- Commands should be simple to understand and as short as possible
+- Few unnecessary features (no need to do in a wrapper what plugins can already do)
 
 ## Disclaimers
-I wrote this primarily to learn rust, I am happy to take feedback and suggestions but ***EXPECT ISSUES***
+I wrote this primarily to learn rust and help me manage my own servers. I would love feedback and suggestions but since I am new to rust ***EXPECT ISSUES***
