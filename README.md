@@ -10,8 +10,8 @@ MCWR is a minecraft server wrapper written in rust. It aims to be as simple and 
 - tmux (`sudo apt install tmux`)
 
 Run the following command to install MCWR on your system. Make sure `~/.cargo/bin/` is in your PATH.
-    cargo install https://github.com/DaCaseo/mcwr
 
+    cargo install https://github.com/DaCaseo/mcwr
 ## Features
 - Run servers in background and access console with tmux
 - Quick and easy creation of vanilla, paper/spigot, bungeecord, and modded servers
