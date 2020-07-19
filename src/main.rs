@@ -1,6 +1,5 @@
 use tmux_interface::{TmuxInterface, NewSession};
 
-
 fn main() {
     let mut tmux = TmuxInterface::new();
 
