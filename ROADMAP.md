@@ -7,5 +7,6 @@ Below are some goals for the future development. Feel free to open an issue if y
 - [ ] Create server
 - [ ] Configuration files
 ### After Release
+- [ ] Command to update server
 - [ ] Status command (players, cpu/mem usage, etc)
 - [ ] Backup command (scheduled backups with cronjobs)
