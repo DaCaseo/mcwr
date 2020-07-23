@@ -1,20 +1,19 @@
 pub fn start_server(_name: &String) {
 	use duct::cmd;
 	use std::io::{prelude::*, BufReader, stdout, Write};
-	std::env::set_current_dir("server").unwrap();
-	let reader = cmd!("java", "-jar", "server.jar", "nogui").reader().unwrap();
+	let reader = cmd!("java", "-jar", "server.jar", "nogui").dir("server").reader().unwrap();
 
 	let buf_reader = BufReader::new(reader);
+	let mut stdout = stdout();
 
 	for l in buf_reader.lines() {
 		let line = l.unwrap() + &String::from("\n");
-		let mut stdout = stdout();
-		stdout.write(line.as_bytes()).unwrap(); // print each stdin character to stdout to give user feedback when typing
+		stdout.write(line.as_bytes()).unwrap(); // TODO: print each stdin character to stdout to give user feedback when typing
 	}
 }
 
-pub fn stop_server(_name: &String) { // use std::env::set_current_dir();
-	
+pub fn stop_server(_name: &String) {
+	use std::io::{prelude::*, Write}; // find a way to keep track of handles
 }
 
 /* pub fn start_server(name: &String) {
