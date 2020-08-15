@@ -2,6 +2,8 @@
 ### THIS DOES NOT WORK YET, DO NOT USE IT
 MCWR is a minecraft server wrapper written in rust. It aims to have as simple and concise syntax as possible while still being reasonably feature complete.
 
+**At the moment the only feature is downloading paper server jars, I'm not really sure how to continue with this so I'll leave in this state until I can figure out solutions for running the server as a child.
+
 ## Installation
 
 #### Requirements
